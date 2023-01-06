@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Software</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  #bred,#bred1 {background-color:#FFFF;}
+  #crump{padding-left:8%;}
+  #fb,#twi,#lk {border-radius:50%;}
+  #trybt{border-radius:42px;background: #1e5ee5;
+    border-color: #1e5ee5;
+    color: #fff; font-size: 12px;
+    line-height: 12px; font-family: "Montserrat Bold",sans-serif;}
+  .header.menu li a{background-color:transparent;color:#2c2d2d;;}
+  .header.menu li a:hover{color:#5eacff;}
+  .eightimgs{box-sizing: border-box;}
+  .eimgs{
+    float: left; padding:0;
+    margin:-2px -2px 10px -2px;
+    width: 100%;}
+    .eimgs li{
+      float:left;padding:2px 2px 2px 2px;
+      list-style:initial initial none;
+      width: 25%; height: auto;
+      margin: 0;
+    }
+    .hws{
+      font-family: sans-serif;
+      border-radius:15px;font-size:13px;
+      background-color:lightgrey;
+      height:23px;width: 80px;
+      text-align: center;
+    }
+    #gt{background-color:#fff; border-radius:10px;color:black;}
+    #gt:hover{background-color: #1e5ee5;
+    transition:0.4s;}
+    #mgr:hover{color: #1e5ee5;}
+</style>
+<body>
+    <div class="wholepage responsive">
+      <div class="container-fluid">
+        <header class="header header-sticky container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="imagebox">
+                <a href="#" class="navbar-brand">
+                    <img src="http://99webpage.com/theme-review/landingpage/smooth/assets/brand/logo@2x.png" class="logo" width="100" height="25"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button></div>
+                    <!--rightside is to mention rightside of navbar-->
+                    <div class="rightside collapse navbar-collapse justify-content-end"  id="navbarSupportedContent">
+                        <ul class="menu navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" id="mgr"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="#" class="nav-link" id="mgr"><b>About Smooth</b></a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="#" class="nav-link" id="mgr"><b>Services</b></a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="#" class="nav-link" id="mgr"><b>Pricing</b></a>
+                            </li>
+                            <li class="nav-item dropdown px-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <b id="mgr">Dropdown</b>
+                                </a>
+                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div> -->
+                              </li>
+                              <li class="nav-item dropdown px-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarblog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <b id="mgr">Blog</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarblog">
+                                  <a class="dropdown-item" href="#">Single Post left side bar</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Single Post Right side bar</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class=" nav-link dropdown-toggle " role="button" href="#" data-target="#grid">Blog Grid</a>
+                                  <div id="grid">
+                                    <a class="dropdown-item" href="#">Blog left side</a>
+                                    <a class="dropdown-item" href="#">Blog right side</a>
+                                  </div> 
+                                  <div class="dropdown-divider"></div>
+                                  <a class="nav-link dropdown-item dropdown-toggle" role="button" data-target="#grid2" href="#">Blog Listing</a>
+                                  <div id="grid2">
+                                    <a class="dropdown-item" href="#">Blog left side</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Blog right side</a>
+                                  </div>
+                                  <div class="dropdown-divider"></div>
+                                  <a class=" nav-link dropdown dropdown-item dropdown-toggle" role="button" data-target="#grid3" href="#">Dropdown Level</a>
+                                  <div id="grid3">
+                                    <a class="dropdown-item" href="#">dropdown1</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">dropdown2</a>
+                                  </div>
+                                 </div>
+                              </li>
+                                <li class="nav-item px-1">
+                                  <a class="nav-link text-dark" href="#" id="mgr"><b>Contact</b></a>
+                                </li>
+                                <li class="nav-item">
+                                 <a class="nav-link text-dark"><button type="button" class="btn btn-primary" id="trybt">Try Free</button></a>
+                                </li>
+                      </ul>
+            </div>
+            </nav>
+        </header>
+      </div>
+        <section class="inline-block">
+          <div id="bred1 pl-5">         
+             <ol class="breadcrumb px-5">
+            <li class="breadcrumb-item" id="crump"><a href="#" class="text-dark"> <i class="fa-solid fa-house-chimney"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-dark">Blog</a></li>
+            <li class="breadcrumb-item active" aria-current="page" class="text-dark">Blog right side</li>
+          </ol>
+        </div>
+        </section>
+<!-- body content-->
+
+           <section class="section pt-40">
+            <!--two is to mention spliting of row into 8-4colmns-->
+            <div class="container twoimg mt-5">
+              <div class="row">
+                <div class="col-lg-8">
+                  <!--bubbleimgcnt is 1st  half of col8 -->
+                  <div class="bubbleimgcnt">
+                    <div class="bbimg">
+                      <img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/blog/thumbnail/img-blog-thumbnail-01@2x.jpg" alt="bubble" class="img-fluid" width="770" height="248">
+                    </div>
+                    <h3 class="tittle">
+                      <a href="#" class="text-dark">Dolores lucilius periculis id usu, iudicabit definitionem eu vel numquam consequuntur no mei</a>
+                    </h3>
+                    <ul style="list-style:none" class="nav">
+                      <li class="mx-3">
+                        <label>
+                          <i class="fa fa-user"></i> <b>Author :</b> 
+                        </label>
+                        <a href="#">Ence iif sy</a>
+                      </li>
+                      <li class="mx-3">
+                        <label>
+                          <i class="fa fa-calendar"></i> <b>Publish :</b>
+                        </label>
+                        <a href="#">20/09/2020</a>
+                      </li>
+                      <li class="mx-3">
+                        <label>
+                          <i class="fa fa-comments"></i> <b>Comments :</b>
+                        </label>
+                        <a href="#">2</a>
+                      </li>
+                    </ul>
+                  <div>
+                    <p>Amet paulo homero an quo, vis iisque praesent sadipscing ex. Instructior vituperatoribus mel ea, eius dictas consequat ex mea, ferri affert neglegentur in sea. Et odio honestatis ius. Exerci numquam consequuntur no mei. Ut sed ornatus tibique, fabellas pertinax est cu. Te odio omittam mea, ea tractatos dissentiunt complectitur nec. Liber voluptatum ad vis.</p>                 
+                  </div>
+                  <div>
+                  <button type="button" class="hws btn-outline-primary">Design</button>
+                  <button type="button" class="hws btn-outline-primary">Web</button>
+                  <button type="button" class="hws btn-outline-primary">landingpage</button>
+                  <button type="button" class="hws btn-outline-primary">Marketings</button>
+                  <button type="button" class="hws btn-outline-primary">SEO</button>
+                  </div>
+                 <div class="mt-3" style="font-size: small;">
+                  <a href="#" class=" text-dark btn-link">Read More -></a>
+                </div>
+               </div><hr>
+               <!--loolipop img div-->
+               <div class="lolipopimgcnt mt-4">
+                <div class="llpimg">
+                  <img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/blog/thumbnail/img-blog-thumbnail-02@2x.jpg" alt="lopimg" class="img-fluid" width="770" height="248">
+                </div>
+                <h3 class="tittle">
+                  <a href="#" class="text-dark">Exerci numquam consequuntur no mei. Ut sed ornatus tibique, fabellas pertinax est cu te odio omittam mea</a>
+                </h3>
+                <ul style="list-style:none" class="nav">
+                  <li class="mx-3">
+                    <label>
+                      <i class="fa fa-user"></i> <b>Author :</b> 
+                    </label>
+                    <a href="#">Ence iif sy</a>
+                  </li>
+                  <li class="mx-3">
+                    <label>
+                      <i class="fa fa-calendar"></i> <b>Publish :</b>
+                    </label>
+                    <a href="#">20/09/2020</a>
+                  </li>
+                  <li class="mx-3">
+                    <label>
+                      <i class="fa fa-comments"></i> <b>Comments :</b>
+                    </label>
+                    <a href="#">3</a>
+                  </li>
+                </ul>
+              <div>
+                <p>Amet paulo homero an quo, vis iisque praesent sadipscing ex. Instructior vituperatoribus mel ea, eius dictas consequat ex mea, ferri affert neglegentur in sea. Et odio honestatis ius. Exerci numquam consequuntur no mei. Ut sed ornatus tibique, fabellas pertinax est cu. Te odio omittam mea, ea tractatos dissentiunt complectitur nec. Liber voluptatum ad vis.</p>                 
+              </div>
+                <div>
+                  <button type="button" class="hws btn-outline-primary">Design</button>
+                  <button type="button" class="hws btn-outline-primary">Web</button>
+                  <button type="button" class="hws btn-outline-primary">landingpage</button>
+                  <button type="button" class="hws btn-outline-primary">Marketings</button>
+                  <button type="button" class="hws btn-outline-primary">SEO</button>
+                  </div>
+             <div class="mt-3" style="font-size: small;">
+              <a href="#" class=" text-dark btn-link">Read More -></a>
+             </div>
+             </div><hr>
+             <!--cakeimgcnt-->
+             <div class="cakeimgcnt mt-4">
+              <div class="cakeimg">
+                <img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/blog/thumbnail/img-blog-thumbnail-03@2x.jpg" alt="lopimg" class="img-fluid" width="770" height="248">
+              </div>
+              <h3 class="tittle">
+                <a href="#" class="text-dark">Cum et magna porro intellegat homero sapientem per id, id sonet veniam commune vis, ei nam nonumy fuisset.</a>
+              </h3>
+              <ul style="list-style:none" class="nav px-4">
+                <li class="mx-3">
+                  <label>
+                    <i class="fa fa-user"></i> <b>Author :</b> 
+                  </label>
+                  <a href="#">Ence iif sy</a>
+                </li>
+                <li class="mx-3">
+                  <label>
+                    <i class="fa fa-calendar"></i> <b>Publish :</b>
+                  </label>
+                  <a href="#">20/09/2020</a>
+                </li>
+                <li class="mx-3">
+                  <label>
+                    <i class="fa fa-comments"></i> <b>Comments :</b>
+                  </label>
+                  <a href="#">3</a>
+                </li>
+              </ul>
+            <div>
+              <p>Amet paulo homero an quo, vis iisque praesent sadipscing ex. Instructior vituperatoribus mel ea, eius dictas consequat ex mea, ferri affert neglegentur in sea. Et odio honestatis ius. Exerci numquam consequuntur no mei. Ut sed ornatus tibique, fabellas pertinax est cu. Te odio omittam mea, ea tractatos dissentiunt complectitur nec. Liber voluptatum ad vis.</p>                 
+            </div>
+            <div>
+              <button type="button" class="hws btn-outline-primary">Design</button>
+              <button type="button" class="hws btn-outline-primary">Web</button>
+              <button type="button" class="hws btn-outline-primary">landingpage</button>
+              <button type="button" class="hws btn-outline-primary">Marketings</button>
+              <button type="button" class="hws btn-outline-primary">SEO</button>
+              </div>
+           <div class="mt-3" style="font-size: small;">
+            <a href="#" class=" text-dark btn-link">Read More -></a>
+           </div>
+           </div>
+           <!--progation start-->
+           <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination mt-3">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item active"><a class="page-link active" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+           </div>
+           <!--progation end-->
+           </div>
+           <!--right side of page-->
+           <div class="col-lg-4">
+            <div class="catagorie">
+              <h3 style="font-family: sans-serif;"><b>Categories</b></h3>
+              <p>==========</p>
+            <div class="dots">
+              <ul>
+                <li><a href="#">Design(2)</a></li>
+                <li><a href="#">Article(8)</a></li>
+                <li><a href="#">News(10)</a></li>
+                <li><a href="#">Tutorial(8)</a></li>
+                <li><a href="#">Free(20)</a></li>
+                <li><a href="#">Marketing(7)</a></li>
+                <li><a href="#">Web(21)</a></li>
+                <li><a href="#">Landing Page(19)</a></li>
+              </ul>
+            </div>
+           </div><hr>
+           <div class="pp">
+            <h3 style="font-family: sans-serif;"><b>Popular Post</b></h3>
+            <p>==========</p>
+          <div class="imgs">
+            <ul style="list-style:none;">
+              <li><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/blog/thumbnail/small/img-blog-thumbnail-small-03@2x.jpg" width="45"height="45" alt=""><a href="#" class="text-dark" style="font-family:sans-serif; line-height:28px;">Dolores lucilius periculis id usu, iudicabit definitionem eu...</a></li>
+              <li><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/blog/thumbnail/small/img-blog-thumbnail-small-02@2x.jpg" width="45"height="45" alt=""><a href="#" class="text-dark" style="font-family:sans-serif;">Exerci numquam consequuntur no mei. Ut sed ornatus tibique...</a></li>
+              <li><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/blog/thumbnail/small/img-blog-thumbnail-small-01@2x.jpg" alt="" width="45"height="45"><a href="#" class="text-dark" style="font-family:sans-serif;">Cum et magna porro intellegat homero sapientem per id...</a></li>
+              <li><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/blog/thumbnail/small/img-blog-thumbnail-small-04@2x.jpg" alt="" width="45"height="45"><a href="#" class="text-dark" style="font-family:sans-serif;">Dolores lucilius periculis id usu, iudicabit definitionem eu...</a></li>
+            </ul>
+          </div>
+         </div><hr>
+         <div class="insta">
+          <h3 style="font-family: sans-serif;"><b><i class="fa-brands fa-square-instagram"></i> Instagram</b></h3>
+          <p><h4></h4></p>
+          <p>==========</p>
+          <div class="eightimgs">
+            <ul style="list-style: none;" class="eimgs">
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-01@2x.jpg" width="80"height="80"></a></li>
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-02@2x.jpg" width="80"height="80"></a></li>
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-03@2x.jpg" width="80"height="80"></a></li>
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-04@2x.jpg" width="80"height="80"></a></li>
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-05@2x.jpg" width="80"height="80"></a></li>
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-06@2x.jpg" width="80"height="80"></a></li>
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-07@2x.jpg" width="80"height="80"></a></li>
+              <li><a href="#"><img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/instagram/instagram-img-08@2x.jpg" width="80"height="80"></a></li>
+            </ul>
+            <div class="px-5">
+              <label>Follow:</label>
+              <a href="#">@your_username</a>
+            </div>
+            </div><hr>
+             <div class="tag mt-4">
+              <h3 style="font-family: sans-serif;"><b>Tags</b></h3>
+              <p>==========</p>
+              <div>
+                <button type="button" class="hws btn-outline-primary">Design</button>
+                <button type="button" class="hws btn-outline-primary">Web</button>
+                <button type="button" class="hws btn-outline-primary">APP</button><br><br>
+                <button type="button" class="hws btn-outline-primary mx-4">Htmls</button>
+                <button type="button" class="hws btn-outline-primary">SEO</button><br><br>
+                <button type="button" class="hws btn-outline-primary">Career</button>
+                <button type="button" class="hws btn-outline-primary">SEO</button>
+                <button type="button" class="hws btn-outline-primary">Print</button>
+              </div>
+             </div>
+          </div>
+            </div>
+            </section>
+            <section class="mt-5">
+              <div class="blbox card" style="background-color:#403595; width:auto; height:250px;">
+                <img src="http://99webpage.com/theme-review/landingpage/smooth/assets/images/cta-bg.png" style="height:250px;" class="card-img-top"alt="" >
+                <div class="container card-img-overlay my-5" style="text-align:center;">
+                  <h2 class="txt-primary card-tittle" style="color: #fff;">Need help's... Feel fee to contact us</h2>
+                    <button type="button" class="btn btn-outline-light" id="gt"><b>Get In Touch <i class="fa-solid fa-arrow-right"></i></b></button>
+                </div>
+              </div>
+            </section>
+            <footer class="footer mt-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img src="http://99webpage.com/theme-review/landingpage/smooth/assets/brand/logo@2x.png" alt=""  width="150" class="mt-4"> <br>
+                    <p class="mt-3">St.Kemacetan timur No.13 Block Q2 Jakarta - Indonesia</p>
+                  </div>
+                  <div class="col-lg-2">
+                    <h5 class="mt-4 pl-5">Product</h5>
+                    <ul style="list-style:none;">
+                      <li><a href="#" class="text-dark">Leading Page</a></li>
+                      <li><a href="#" class="text-dark">Email Marketing</a></li>
+                      <li><a href="#" class="text-dark">Html Template</a></li>
+                      <li><a href="#" class="text-dark">Angular  Builder</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h5 class="mt-4 pl-4">Company</h5>
+                    <ul style="list-style:none;">
+                      <li><a href="#" class="text-dark">About us</a></li>
+                      <li><a href="#" class="text-dark">Services</a></li>
+                      <li><a href="#" class="text-dark">Career</a></li>
+                      <li><a href="#" class="text-dark">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h5 class="mt-4 pl-2">Resources</h5>
+                    <ul style="list-style:none;">
+                      <li><a href="#" class="text-dark">F.A.Q</a></li>
+                      <li><a href="#" class="text-dark">Blog</a></li>
+                      <li><a href="#" class="text-dark">Testimoni</a></li>
+                      <li><a href="#" class="text-dark">Site Map</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h5 class="mt-4">Follow us
+                      <div class="mt-4">
+                        <button id="fb" type="button" class="btn btn-outline-primary"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button  id="twi" type="button" class="btn btn-outline-primary"><i class="fa-brands fa-twitter"></i></button>
+                        <button id="lk" type="button" class="btn btn-outline-primary"><i class="fa-brands fa-linkedin"></i></button>
+                      </div>
+                    </h5> 
+                  </div>
+                </div>
+              </div>
+            </footer>
+        </div>
+</body>   
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
